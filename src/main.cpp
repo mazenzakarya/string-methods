@@ -19,5 +19,9 @@ int main() {
             << stringCompare(FristStringToCompare, secondStringToCompare)
             << std::endl;
 
+  char original[] = "Hello, World!";
+  char copy[] = "";
+  copyString(original, copy);
+  std::cout << "Copied string: " << copy << std::endl;
   return 0;
 }

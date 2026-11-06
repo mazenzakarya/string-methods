@@ -48,3 +48,12 @@ int stringCompare(const char* str1, const char* str2) {
 }
 
 // string copy
+char* copyString(char* original, char* copy) {
+  int counter = 0;
+  for (int i = 0; original[i] != '\0'; i++) {
+    copy[i] = original[i];
+    counter++;
+  }
+  copy[counter] = '\0';
+  return copy;
+}
